@@ -5,7 +5,6 @@ from ..models import models, schemas
 
 def create(db: Session, recipe):
     db_recipe = models.Recipe(
-        id=recipe.id,
         sandwich_id=recipe.sandwich_id,
         resource_id=recipe.resource_id,
         amount=recipe.amount

@@ -5,7 +5,6 @@ from ..models import models, schemas
 
 def create(db: Session, resource):
     db_resource = models.Resource(
-        id=resource.id,
         item=resource.item,
         amount=resource.amount
     )
