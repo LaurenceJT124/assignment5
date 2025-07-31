@@ -5,9 +5,7 @@ from ..models import models, schemas
 def create(db: Session, sandwich):
     db_sandwich = models.Sandwich(
         sandwich_name = sandwich.sandwich_name,
-        price = sandwich.price,
-        recipes = sandwich.recipe,
-        order_details = sandwich.order_details
+        price = sandwich.price
     )
     db.add(db_sandwich)
     db.commit()
